@@ -10,31 +10,32 @@
 <body>
     <div class="exchage-box">
         <div class="dropdown">
-            <button class="dropbtn"id="from-button">USD</button>
+            <button class="dropbtn"id="from-button"><img class="flag-img"
+                src="https://cdn-icons-png.flaticon.com/512/555/555526.png" />USD</button>
             <div class="dropdown-content" id="from-currency-list">
-            <a href="#">USD</a>
-            <a href="#">KRW</a>ß
-            <a href="#">VND</a>
+            <li id="KRW"><img class="flag-img" src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png">KWD</li>
+            <li id="USD"><img class="flag-img" src="https://cdn-icons-png.flaticon.com/512/555/555526.png"/>USD</li>
+            <li id="VND"><img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2560px-Flag_of_Vietnam.svg.png">VND</li>
             </div>
         </div>
         <div class="input-area">
-            <input type="number" id="from-input" onkeyup="convert()"/>
-            <div>달러</div>
+            <input type="text" class="amount-box" id="from-input" onkeyup="convert()" placeholder="금액을입력하세요"/>
+            <div id="fromNumToKorea" class="korea-num">달러</div>
         </div>
     </div>
-    <h1>=</h1>
+    <div class="same-icon">=</div>
     <div class="exchage-box">
         <div class="dropdown">
-            <button class="dropbtn"id="to-button">USD</button>
+            <button class="dropbtn"id="to-button"><img class="flag-img" src="https://cdn-icons-png.flaticon.com/512/555/555526.png"/>USD</button>
             <div class="dropdown-content" id="to-currency-list">
-            <a href="#">USD</a>
-            <a href="#">KRW</a>
-            <a href="#">VND</a>
+            <li id="KRW"><img class="flag-img" src="https://cdn.countryflags.com/thumbs/south-korea/flag-400.png">KWD</li>
+            <li id="USD"><img class="flag-img" src="https://cdn-icons-png.flaticon.com/512/555/555526.png"/>USD</li>
+            <li id="VND"><img class="flag-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Vietnam.svg/2560px-Flag_of_Vietnam.svg.png">VND</li>
             </div>
         </div>
         <div class="input-area">
-            <input type="number" id="to-input"/>
-            <div>달러</div>
+            <input type="text" class="amount-box" id="to-input" onkeyup="convert()"/>
+            <div id="toNumToKorea" class="korea-num">달러</div>
         </div>
     </div>
 

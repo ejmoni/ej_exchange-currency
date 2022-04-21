@@ -1,16 +1,30 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url("https://c8.alamy.com/comp/PM8WH9/vector-logo-currency-exchange-PM8WH9.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
 .exchage-box{
-    border: 1px solid black;
-    width: 400px;
+    width: 350px;
+    background-color: white;
 }
 /* Style The Dropdown Button */
 .dropbtn {
-  background-color: #4CAF50;
+  background-color: #1c64eb;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 450;
   border: none;
   cursor: pointer;
   width: 100%;
+  margin: 0px;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -32,7 +46,7 @@
 }
 
 /* Links inside the dropdown */
-.dropdown-content a {
+.dropdown-content li {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
@@ -40,7 +54,7 @@
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #f1f1f1}
+.dropdown-content li:hover {background-color: #f1f1f1}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -49,11 +63,32 @@
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color: #2ea5ef;
+}
+
+.amount-box{
+  width: 100%;
+  border: none;
+  text-align: right;
+  margin: 0;
 }
 .input-area{
   width:100%;
 }
 .input-area input{
   width:100%;
+  background-color: white;
+}
+.same-icon{
+  color: white;
+  font-weight: 900;
+  font-size: 2rem;
+}
+.korea-num{
+  height: 50px;
+  text-align: right;
+}
+.flag-img{
+  width: 18px;
+  height: 12px;
 }
